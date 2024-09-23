@@ -1,0 +1,1418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>智能调光板块</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+<div id="particles-js" class="main">
+    <div class="main_con">
+        <div class="main_top">
+            <div class="main_top_left">
+                <div class="main_top_left_top">
+                    <img src="./images/main_top_left.png"/>
+                    <div class="main_top_left_top_title">路灯数据统计分析</div>
+                    <div class="main_top_left_top_con">
+                        <div class="main_top_left_top_con_list">
+                            <span class="main_top_left_c_l_n main_top_left_c_l_n1">0</span>
+                            <p>周一</p>
+                        </div>
+                        <div class="main_top_left_top_con_list">
+                            <span class="main_top_left_c_l_n main_top_left_c_l_n2">0</span>
+                            <p>周二</p>
+                        </div>
+                        <div class="main_top_left_top_con_list">
+                            <span class="main_top_left_c_l_n main_top_left_c_l_n3">0</span>
+                            <p>周三</p>
+                        </div>
+                        <div class="main_top_left_top_con_left">
+                            <div class="main_top_left_t_c_l_left">
+                                <span class="main_top_left_c_l_n main_top_left_c_l_n4">0</span>
+                                <p>周四</p>
+                            </div>
+                            <div class="main_top_left_t_c_l_right">
+                                <span class="main_top_left_c_l_n main_top_left_c_l_n5">0</span>
+                                <p>周五</p>
+                            </div>
+                        </div>
+                        <div class="main_top_left_top_con_right main_top_left_top_con_right2">
+                            <div class="main_top_left_t_c_r_left">
+                                <span class="main_top_left_c_l_n">0</span>
+                                <p>周六</p>
+                            </div>
+                            <div class="main_top_left_t_c_r_right">
+                                <span class="main_top_left_c_l_n">0</span>
+                                <p>周天</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_top_left_top main_top_left_bottom">
+                    <img src="./images/main_top_left.png"/>
+                    <div class="main_top_left_top_title">新型环保路灯测试</div>
+                    <div id="baseId" class="main_top_left_top_con"></div>
+                </div>
+            </div>
+            <div class="main_top_middle">
+                <div class="main_top_middle_top_title">
+                    <img class="title_bg" src="./images/title_bg.png">
+                    智能调光板块
+                    <a class="title_web" href="" target="blank">后台管理系统</a>
+                    <a class="title_admin" href="" target="blank">web网页</a>
+                </div>
+                <div class="main_top_middle_num_title">路灯数量统计</div>
+                <div class="main_top_middle_num">
+                    <div class="main_top_middle_num_list">
+                        <img src="./images/center_num.png">
+                        <p class="main_top_middle_num_list5">1</p>
+                    </div>
+                    <div class="main_top_middle_num_list">
+                        <img src="./images/center_num.png">
+                        <p class="main_top_middle_num_list4">2</p>
+                    </div>
+                    <div class="main_top_middle_num_list">
+                        <img src="./images/center_num.png">
+                        <p class="main_top_middle_num_list3">3</p>
+                    </div>
+                    <div class="main_top_middle_num_list">
+                        <img src="./images/center_num.png">
+                        <p class="main_top_middle_num_list2">4</p>
+                    </div>
+                    <div class="main_top_middle_num_list">
+                        <img src="./images/center_num.png">
+                        <p class="main_top_middle_num_list1">5</p>
+                    </div>
+                </div>
+                <div class="main_top_middle_bottom">
+                    <div class="main_top_middle_bottom_echarts">
+                        <img src="./images/main_top_bottom.png">
+                        <div class="main_top_echarts_con">
+                            <div class="main_top_echarts_con_title">灯光导致车祸发生数据统计</div>
+                            <div id="threeTasksId" class="main_top_echarts_pie"></div>
+                        </div>
+                    </div>
+                    <div class="main_top_middle_bottom_echarts main_top_middle_bottom_echarts_right">
+                        <img src="./images/main_top_bottom.png">
+                        <div class="main_top_echarts_con">
+                            <div class="main_top_echarts_con_title">不同灯光下的平均行驶速度</div>
+                            <div id="publicityId" class="main_top_echarts_pie"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_top_left main_top_right">
+                <div class="main_top_left_top">
+                    <img src="./images/main_top_left.png"/>
+                    <div class="main_top_left_top_title">光照强度对司机疲劳程度缓解分析统计</div>
+                    <div class="main_top_left_top_con">
+                        <div class="main_top_left_top_con_left">
+                            <span class="daysData">0</span>
+                            <p>0疲劳</p>
+                        </div>
+                        <div class="main_top_left_top_con_right">
+                            <span class="weekData">0</span>
+                            <p>20疲劳</p>
+                        </div>
+                        <div class="main_top_left_top_con_list">
+                            <span class="monthData">0</span>
+                            <p>40疲劳</p>
+                        </div>
+                        <div class="main_top_left_top_con_list">
+                            <span class="someThing">0</span>
+                            <p>60疲劳</p>
+                        </div>
+                        <div class="main_top_left_top_con_list">
+                            <span class="policyData">0</span>
+                            <p>80疲劳</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_top_left_top main_top_left_bottom">
+                    <img src="./images/main_top_left.png"/>
+                    <div class="main_top_left_top_title">路灯不同时间可见度</div>
+                    <div id="questionId" class="main_top_left_top_con">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_middle">
+            <div class="main_middle_list">
+                <img src="./images/main_middle.png">
+                <div class="main_list_title main_list_title1">早晨</div>
+                <span class="main_list_title_num main_list_title_num1">0</span>
+            </div>
+            <div class="main_middle_list">
+                <img src="./images/main_middle.png">
+                <div class="main_list_title main_list_title2">下午</div>
+                <span class="main_list_title_num main_list_title_num2">0</span>
+            </div>
+            <div class="main_middle_list">
+                <img src="./images/main_middle.png">
+                <div class="main_list_title main_list_title3">中午</div>
+                <span class="main_list_title_num main_list_title_num3">0</span>
+            </div>
+            <div class="main_middle_list">
+                <img src="./images/main_middle.png">
+                <div class="main_list_title main_list_title4">黄昏</div>
+                <span class="main_list_title_num main_list_title_num4">0</span>
+            </div>
+            <div class="main_middle_list">
+                <img src="./images/main_middle.png">
+                <div class="main_list_title main_list_title5">傍晚</div>
+                <span class="main_list_title_num main_list_title_num5">0</span>
+            </div>
+        </div>
+        <div class="main_bottom">
+            <div class="main_bottom_top">
+                <div class="main_bottom_top_list">
+                    <img src="./images/main_bottopm_top1.png">
+                    <div class="main_bottom_t_l_title">行车指南</div>
+                    <div class="main_bottom_t_l_con">
+                        <div class="main_bottom_t_l_main">
+                            <ul>
+                                <li>
+                                    <div class="main_bottom_t_l_main_list">
+                                        <div class="main_bottom_t_list_title main_bottom_t_list_title1">1.行车过程一律施行“亮码、扫码、测温、佩戴口罩”出行管理</div>
+                                        <div class="main_bottom_t_list_time main_bottom_t_list_time1">2022/03/14</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main_bottom_t_l_main_list">
+                                        <div class="main_bottom_t_list_title main_bottom_t_list_title2">2.火车站、汽车站、路口检测站查验48小时内证明</div>
+                                        <div class="main_bottom_t_list_time main_bottom_t_list_time2">2022/03/14</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main_bottom_t_l_main_list">
+                                        <div class="main_bottom_t_list_title main_bottom_t_list_title3">3.无健康码、通信行程卡应用使用条件的老人、儿童等群体，可由家属代领或本人向社区（村）申请，签署《疫情防控责任承诺书-出行使用》</div>
+                                        <div class="main_bottom_t_list_time main_bottom_t_list_time3">2022/03/15</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main_bottom_t_l_main_list">
+                                        <div class="main_bottom_t_list_title main_bottom_t_list_title4">4.凡发现亮码、扫码异常或有发热、咳嗽症状人员，立即采取隔离措施，并通知属地疫情防控领导机构落实相应管控措施。</div>
+                                        <div class="main_bottom_t_list_time main_bottom_t_list_time4">2022/03/16</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_bottom_top_list">
+                    <img src="./images/main_bottopm_top2.png">
+                    <div class="main_bottom_t_l_title">色温调控</div>
+                    <div id="departmentId" class="main_bottom_t_l_chart"></div>
+                </div>
+                <div class="main_bottom_top_list">
+                    <img src="./images/main_bottopm_top1.png">
+                    <div class="main_bottom_t_l_title">行车法规</div>
+                    <div class="main_bottom_t_l_con">
+                        <div class="main_bottom_t_l_main2">
+                            <ul>
+                                <li>
+                                    <div class="main_bottom_t_l_main_list">
+                                        <div class="main_bottom_t_list_title main_bottom_polity_title1">1.驾驶车辆时，须携带有效驾驶证、行驶证及有关证件</div>
+                                        <div class="main_bottom_t_list_time main_bottom_polity_time1">2022/05/20</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main_bottom_t_l_main_list">
+                                        <div class="main_bottom_t_list_title main_bottom_polity_title2">2.遵守交通法规，不疲劳驾车</div>
+                                        <div class="main_bottom_t_list_time main_bottom_polity_time1">2022/05/20</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main_bottom_t_l_main_list">
+                                        <div class="main_bottom_t_list_title main_bottom_polity_title3">3.遵守交通规则，不违章驾车</div>
+                                        <div class="main_bottom_t_list_time main_bottom_polity_time1">2022/05/20</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main_bottom_t_l_main_list">
+                                        <div class="main_bottom_t_list_title main_bottom_polity_title4">4.做到安全装载，不超载驾驶</div>
+                                        <div class="main_bottom_t_list_time main_bottom_polity_time1">2022/05/20</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_bottom_bottom">
+                <div class="main_bottom_b_left">
+                    <img src="./images/main_bottom_bottom.png">
+                    <div class="main_bottom_b_title">灯光强度占比</div>
+                    <div id="coverageId" class="main_bottom_b_con"></div>
+                </div>
+                <div class="main_bottom_b_middle1">
+                    <img src="./images/main_bootm_middle.png">
+                    <div class="main_bottom_b_title">灯光色温占比</div>
+                    <div id="contentId" class="main_bottom_b_con main_bottom_b_con2"></div>
+                </div>
+                <div class="main_bottom_b_middle2">
+                    <img src="./images/main_bootm_middle.png">
+                    <div class="main_bottom_b_title">耗电显示</div>
+                    <div id="publicNumId" class="main_bottom_b_con main_bottom_b_con2"></div>
+                </div>
+                <div class="main_bottom_b_right">
+                    <img src="./images/main_bottom_bottom.png">
+                    <div class="main_bottom_b_title">路灯使用时间</div>
+                    <div id="yearsNumId" class="main_bottom_b_con"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="https://www.jq22.com/jquery/echarts-4.2.1.min.js"></script>
+<script type="text/javascript" src="js/dataScoll.js"></script>
+<script type="text/javascript" src="js/digitalScroll.js"></script>
+<script type="text/javascript" src="js/jcarousellite.js"></script>
+<script type="text/javascript" src="js/particles.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+<script>
+    $(function() {
+        function apiFn() {
+            this.hostname = ""
+        }
+        apiFn.prototype = {
+            Init:function() {
+                this.findCount()
+                this.otherDataFn()
+                this.baseInfo()
+                this.questionFn()
+                this.publicityFn()
+                this.threeTasksFn()
+                this.departmentFn()
+                this.guideFn()
+                this.policyFn()
+                this.coverageFn()
+                this.yearsNumFn()
+                this.contentFn()
+                this.publicNumFn()
+                setInterval(function() {
+                    numInit()
+                },6000)
+            },
+            findCount:function() {
+
+            },
+            // 其他数据展示
+            otherDataFn:function() {
+                $(".daysData").addClass("counter-value").text("304")
+                $(".weekData").addClass("counter-value").text("2044")
+                $(".monthData").addClass("counter-value").text("909")
+                $(".someThing").addClass("counter-value").text("980")
+                $(".policyData").addClass("counter-value").text("200")
+            },
+            // 基础信息
+            baseInfo:function() {
+
+
+                var baseChart = echarts.init(document.getElementById('baseId'));
+                var charts = [
+                    {name: "城市主路", num: 200},
+                    {name: "城市辅路", num: 300},
+                    {name: "乡村主路", num: 400},
+                    {name: "乡村辅路", num: 500},
+                    {name: "工业园区", num: 300},
+                ]
+                var color = ['rgba(100,255,249', 'rgba(100,255,249', 'rgba(100,255,249', 'rgba(100,255,249', 'rgba(100,255,249']
+
+                let lineY = []
+                for (var i = 0; i < charts.length; i++) {
+                var x = i
+                if (x > color.length - 1) {
+                    x = color.length - 1
+                }
+                var data = {
+                    name: charts[i].name,
+                    color: color[x] + ')',
+                    value: charts[i].num,
+                    itemStyle: {
+                    normal: {
+                        show: true,
+                        color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
+                        offset: 0,
+                        color: color[x] + ', 0.3)'
+                        }, {
+                        offset: 1,
+                        color: color[x] + ', 1)'
+                        }], false),
+                        barBorderRadius: 10
+                    },
+                    emphasis: {
+                        shadowBlur: 15,
+                        shadowColor: 'rgba(0, 0, 0, 0.1)'
+                    }
+                    }
+                }
+                lineY.push(data)
+                }
+                var option= {
+                title: {
+                    show: false
+                },
+                grid: {
+                    // borderWidth: 1,
+                    top: '10%',
+                    left: '30%',
+                    right: '20%',
+                    bottom: '3%'
+                },
+                color: color,
+                yAxis: [{
+                    type: 'category',
+                    inverse: true,
+                    axisTick: {
+                    show: false
+                    },
+                    axisLine: {
+                    show: false
+                    },
+                    axisLabel: {
+                    show: false,
+                    inside: false
+                    },
+                    data: charts.name
+                }, {
+                    type: 'category',
+                    inverse: true,
+                    axisLine: {
+                    show: false
+                    },
+                    axisTick: {
+                    show: false
+                    },
+                    axisLabel: {
+                    show: true,
+                    inside: false,
+                    textStyle: {
+                        color: '#38E1E1',
+                        fontSize: '8',
+                    },
+                    formatter: function (val,index) {
+                        return `${charts[index].num}`
+                    }
+                    },
+                    splitArea: {
+                    show: false
+                    },
+                    splitLine: {
+                    show: false
+                    },
+                    data: charts
+                }],
+                xAxis: {
+                    // type: 'value',
+                    axisTick: {
+                    show: false
+                    },
+                    axisLine: {
+                    show: false
+                    },
+                    splitLine: {
+                    show: false
+                    },
+                    axisLabel: {
+                    show: false
+                    }
+                },
+                series: [{
+                    name: '',
+                    type: 'bar',
+                    zlevel: 2,
+                    barWidth: '5px',
+                    data: lineY,
+                    animationDuration: 1500,
+                    label: {
+                    normal: {
+                        color: 'white',
+                        show: true,
+                        position: [-65, -2],
+                        textStyle: {
+                        fontSize: 8
+                        },
+                        formatter: function (a, b) {
+                            return a.name
+                        }
+                    }
+                    }
+                }],
+                animationEasing: 'cubicOut'
+                }
+                baseChart.setOption(option)
+                setInterval(function() {
+                    baseChart.clear()
+                    baseChart.setOption(option)
+                },40000)
+            },
+            questionFn:function() {
+                var numArr = [
+                    {name: '1：00-2：00', value: 300},
+                    {name: '3：00-4：00', value: 500},
+                    {name: '5：00-6：00', value: 400},
+                    {name: '7：00-8：00', value: 350},
+                    {name: '9：00-10：00', value: 363},
+                    {name: '11：00-12：00', value: 800},
+                ]
+                var datas = numArr
+                var questionChart = echarts.init(document.getElementById('questionId'));
+                var option = {
+                    title: {
+                        left: 'center'
+                    },
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: '{a} <br/>{b} : {c} ({d}%)'
+                    },
+                    color:['#2E8CFF', '#FD9133','#37D2D4','#19CA88','#858FF8'],
+                    legend: {
+                        itemWidth: 11,// 标志图形的长度
+                        itemHeight: 11,// 标志图形的宽度
+                        orient: 'vertical',
+                        // left: 'right',
+                        top: '15%',
+                        x: '50%',
+                        data: datas,
+                        textStyle: { //图例文字的样式
+                            color: '#fff',
+                            fontSize: 8
+                        },
+                    },
+                    series: [
+                        {
+                            name: '问题反馈',
+                            type: 'pie',
+                            radius: '75%',
+                            center: ['20%', '50%'],
+                            animationDuration: 2500,
+                            data: datas,
+                            label: {
+                                normal: {
+                                    position: 'inner',
+                                    show : false
+                                }
+                            }
+                        }
+                    ]
+                };
+                questionChart.setOption(option)
+                setInterval(function() {
+                    questionChart.clear()
+                    questionChart.setOption(option)
+                },8000)
+            },
+            publicityFn:function() {
+                var dataArr = [
+                    {name: '10', value: 300},
+                    {name: '20', value: 500},
+                    {name: '30', value: 400},
+                    {name: '40', value: 350},
+                    {name: '50', value: 363},
+                    {name: '60', value: 800},
+                ]
+                // for(var i = 0; i < res.list.length; i++) {
+                //     dataArr.push({name: res.list[i].name, value: res.list[i].num})
+                // }
+
+                var publicitChart = echarts.init(document.getElementById('publicityId'));
+                var data = dataArr
+                var option = {
+                    color: ['#38EB70', '#F7E16C', '#0EFCFF', '#FD9133', '#4D92F2'],
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: '{a} <br/>{b} : {c} ({d}%)'
+                    },
+                    legend: {
+                        itemWidth: 12,// 标志图形的长度
+                        itemHeight: 12,// 标志图形的宽度
+                        orient: 'vertical',
+                        // left: 'right',
+                        top: '5%',
+                        bottom: '50%',
+                        x: '45%',
+                        textStyle: {
+                            color: '#fff',
+                            fontSize: 8,
+
+                        },
+                        data: data,
+                    },
+                    series: [
+                        // 主要展示层的
+                        {
+                            radius: ['70%', '90%'],
+                            center: ['25%', '50%'],
+                            type: 'pie',
+                            label: {
+                                normal: {
+                                    position: 'inner',
+                                    show : false
+                                }
+                            },
+                            name: "不正确使用灯光情况统计",
+                            data: data,
+                        },
+                        // 边框的设置
+                        {
+                            radius: ['50%', '55%'],
+                            center: ['25%', '50%'],
+                            type: 'pie',
+                            label: {
+                                normal: {
+                                    show: false
+                                },
+                                emphasis: {
+                                    show: false
+                                }
+                            },
+                            labelLine: {
+                                normal: {
+                                    show: false
+                                },
+                                emphasis: {
+                                    show: false
+                                }
+                            },
+                            animation: false,
+                            tooltip: {
+                                show: false
+                            },
+                            data: [{
+                                value: 1,
+                                itemStyle: {
+                                    color: "rgba(250,250,250,0.3)",
+                                },
+                            }],
+                        }
+                    ]
+                };
+                publicitChart.setOption(option)
+                setInterval(function() {
+                    publicitChart.clear()
+                    publicitChart.setOption(option)
+                },6000)
+            },
+            threeTasksFn:function() {
+                let names = "666666";
+                if(6 - names.length > 0) {
+                    for(g = 0; g < 6 - names.length; g++) {
+                        $(".main_top_middle_num_list"+(6 - g)).text('0')
+                    }
+                }
+                for(var j = 0; j < names.length; j++) {
+                    $(".main_top_middle_num_list"+(names.length - j)).text(names.substr(j,1))
+                }
+                var dataArr = [
+                    {name: '10', value: 300},
+                    {name: '20', value: 500},
+                    {name: '30', value: 400},
+                    {name: '40', value: 350},
+                    {name: '50', value: 363},
+                    {name: '60', value: 800},
+                ]
+                for(var i = 1; i < dataArr.length; i++) {
+                    $(".main_top_left_c_l_n"+i).addClass("counter-value").text(dataArr[i].value)
+                }
+                var threeTasksChart = echarts.init(document.getElementById('threeTasksId'));
+                var data = dataArr
+                var option = {
+                    color: ['#38EB70', '#2E8CFF', '#0EFCFF', '#858FF8', '#FD9133','#F7E270'],
+                    tooltip : {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                    },
+                    legend: {
+                        itemWidth: 15,// 标志图形的长度
+                        itemHeight: 15,// 标志图形的宽度
+                        orient: 'vertical',
+                        // left: 'right',
+                        top: '10%',
+                        bottom: '50%',
+                        x: '50%',
+                        textStyle: {
+                            color: '#fff',
+                            fontSize: 8,
+
+                        },
+                        data: data
+                    },
+                    series :
+                        {
+                            name:'消耗公开',
+                            type:'pie',
+                            animationDuration: 1500,
+                            radius: ['70%', '90%'],
+                            center: ['25%', '50%'],
+                            roseType : 'radius',
+                            label: {
+                                normal: {
+                                    position: 'inner',
+                                    show : false
+                                }
+                            },
+                            data:data
+                        }
+                };
+                threeTasksChart.setOption(option)
+                setInterval(function() {
+                    threeTasksChart.clear()
+                    threeTasksChart.setOption(option)
+                },4000)
+            },
+            departmentFn:function() {
+                var dataArr = [
+                    {name: '暧白（2700K-4500K)', value: 300},
+                    {name: '正白(4500-6500K)', value: 500},
+                    {name: '冷白(6500K+)', value: 400},
+                    {name: '暖黄光(6500K-9000K)', value: 350},
+                    {name: '冷蓝光(9000K+)', value: 363},
+                ]
+                    // 中间滚动数据展示
+                    for(var j = 0; j < dataArr.length; j++) {
+                        $(".main_list_title_num"+(j+1)).addClass("counter-value").text(dataArr[j].value)
+                        $(".main_list_title"+(j+1)).text(dataArr[j].name)
+                    }
+                var departmentChart = echarts.init(document.getElementById('departmentId'));
+                var data = dataArr
+                var option = {
+                    color: ['#FD9133', '#47F6A2', '#37D2D4', '#3493FF'],
+                    tooltip : {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                    },
+                    legend: {
+                        itemWidth: 15,// 标志图形的长度
+                        itemHeight: 15,// 标志图形的宽度
+                        orient: 'vertical',
+                        // left: 'right',
+                        top: '30%',
+                        bottom: '50%',
+                        x: '5%',
+                        textStyle: {
+                            color: '#fff',
+                            fontSize: 8,
+
+                        },
+                        data: data,
+                    },
+                    series: [
+                        {
+                            name: '电力损耗占比',
+                            type: 'pie',
+                            radius: ['50%', '70%'],
+                            center: ['78%', '52%'],
+                            labelLine: {
+                                normal: {
+                                    length: 12,
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color: '#0EFCFF'
+                                    }
+                                }
+
+                            },
+                            label: {
+                                normal: {
+                                    formatter: (params)=>{
+                                        return params.name
+                                    },
+                                    borderWidth: 0,
+                                    borderRadius: 4,
+                                    padding: [0,0],
+                                    height: 20,
+                                    fontSize: 8,
+                                    align: 'center',
+                                    color: '#0EFCFF',
+                                }
+                            },
+                            data: data
+                        },
+                        {
+                            color: '#0EFCFF',
+                            type: 'pie',
+                            radius: ['55', '56'],
+                            center: ['78%', '52%'],
+                            data: [100],
+                            label: {
+                                show: false
+                            }
+                        },
+                        {
+                            type: 'pie',
+                            radius: ['25', '26'],
+                            center: ['78%', '52%'],
+                            data: [100],
+                            label: {
+                                show: false
+                            }
+                        }
+                    ]
+                };
+                departmentChart.setOption(option)
+                setInterval(function() {
+                    departmentChart.clear()
+                    departmentChart.setOption(option)
+                },12000)
+            },
+            guideFn:function() {
+                $(".main_bottom_t_l_main").jCarouselLite({
+                    vertical: true,
+                    hoverPause:true,
+                    visible: 4,
+                    auto: 1000,
+                    speed: 500
+                });
+            },
+            policyFn:function() {
+                $(".main_bottom_t_l_main2").jCarouselLite({
+                    vertical: true,
+                    hoverPause:true,
+                    visible: 4,
+                    auto: 1000,
+                    speed: 500
+                });
+            },
+            coverageFn:function() {
+                var resArr = [
+                    {name: '0%', value: 300},
+                    {name: '20%', value: 500},
+                    {name: '40%', value: 400},
+                    {name: '60%', value: 350},
+                    {name: '80%', value: 363},
+                    {name: '100%', value: 800},
+                ]
+                var indicatorArr = []
+                var numArr = []
+                for(var i = 0; i < resArr.length; i++) {
+                    indicatorArr.push({name: resArr[i].name,max: 900})
+                    numArr.push(resArr[i].value)
+                }
+                var data = [
+                    {
+                        value: numArr,
+                    }
+                ]
+                var coverageChart = echarts.init(document.getElementById('coverageId'));
+                var option = {
+                    legend: {
+                        show: true,
+                        icon: "circle",
+                        bottom: 30,
+                        center: 0,
+                        itemWidth: 14,
+                        itemHeight: 14,
+                        itemGap: 21,
+                        orient: "horizontal",
+                        data: ['a', 'b'],
+                        textStyle: {
+                            fontSize: '70%',
+                            color: '#0EFCFF'
+                        },
+                    },
+
+                    radar: {
+                        // shape: 'circle',
+                        radius: '70%',
+                        triggerEvent: true,
+                        // type: 'default',
+                        name: {
+                            textStyle: {
+                                color: '#39DCF4',
+                                fontSize: '10',
+                                // borderRadius: 3,
+                                padding: [10, 10]
+                            }
+                        },
+                        nameGap: '0',
+                        indicator: indicatorArr,
+                        splitArea: {
+                            areaStyle: {
+                                color: 'rgba(255,255,255,0)'
+                            }
+                        },
+                        axisLine: { //指向外圈文本的分隔线样式
+                            lineStyle: {
+                                color: 'rgba(255,255,255,.2)'
+                            }
+                        },
+                        splitLine: {
+                            lineStyle: {
+                                width: 1,
+                                color: 'rgba(255,255,255,.2)'
+                            }
+                        },
+
+                    },
+                    series: [{
+                        name: '色温区域占比',
+                        type: 'radar',
+                        animationDuration: 2000,
+                        areaStyle: {
+                            normal: {
+                                color: {
+                                    type: 'linear',
+                                    opacity: 1,
+                                    x: 0,
+                                    y: 0,
+                                    x2: 0,
+                                    y2: 1,
+                                    color: '#2EEFAD'
+                                }
+                            }
+                        },
+                        symbolSize: 0,
+                        lineStyle: {
+                            normal: {
+                                // color: 'rgba(252,211,3, 1)',
+                                width: 0
+                            }
+                        },
+                        data: data
+                    }]
+                };
+                coverageChart.setOption(option)
+                setInterval(function() {
+                    coverageChart.clear()
+                    coverageChart.setOption(option)
+                },10000)
+            },
+            yearsNumFn:function() {
+                var resArr = [
+                    {name: '1h', value: 30},
+                    {name: '2h', value: 50},
+                    {name: '3h', value: 40},
+                    {name: '4h', value: 35},
+                    {name: '5h', value: 36},
+                    {name: '6h', value: 80},
+                ]
+                var nameArr = []
+                var caiArr = []
+                var cunArr = []
+                var danArr = []
+                var junArr = []
+                var zhenArr = []
+                for(var i = 0; i < resArr.length; i++) {
+                    nameArr.push(resArr[i].name)
+                    caiArr.push(resArr[i].value)
+                    cunArr.push(resArr[i].value)
+                    danArr.push(resArr[i].value)
+                    junArr.push(resArr[i].value)
+                    zhenArr.push(resArr[i].value)
+                }
+                var yearsNumChart = echarts.init(document.getElementById('yearsNumId'));
+                var spNum = 5,_max=100;
+                var y_data = nameArr.reverse();
+                var _datamax = [100,100,100,100,100,100,100,100,100,100,100,100],
+                    _data1 = caiArr.reverse(),
+                    _data2 = cunArr.reverse(),
+                    _data3 = danArr.reverse();
+                    _data4 = junArr.reverse();
+                    _data5 = zhenArr.reverse();
+                var fomatter_fn = function(v) {
+                    return (v.value / _max * 100).toFixed(0)
+                }
+                var _label = {
+                    normal: {
+                        show: true,
+                        position: 'inside',
+                        formatter: fomatter_fn,
+                        textStyle: {
+                            color: '#fff',
+                            fontSize: 8
+                        }
+                    }
+                };
+                var option = {
+                    grid: {
+                        containLabel: true,
+                        left: 0,
+                        top: 0,
+                        right: 0,
+                        bottom: 0
+                    },
+                    tooltip: {
+                        show: true,
+                        backgroundColor: '#fff',
+                        borderColor: '#ddd',
+                        borderWidth: 1,
+                        textStyle: {
+                            color: '#3c3c3c',
+                            fontSize: 16
+                        },
+                        extraCssText: 'box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)'
+                    },
+                    xAxis: {
+                        splitNumber: spNum,
+                        interval: _max / spNum,
+                        max: _max,
+                        axisLabel: {
+                            show: false,
+                            formatter: function(v) {
+                                var _v = (v / _max * 100).toFixed(0);
+                                return _v == 0 ? _v : _v + '%';
+                            }
+                        },
+                        axisLine: {
+                            show: false
+                        },
+                        axisTick: {
+                            show: false
+                        },
+                        splitLine: {
+                            show: false
+                        }
+
+                    },
+                    yAxis: [{
+                        data: y_data,
+                        axisLabel: {
+                            fontSize: 8,
+                            color: 'rgba(255,255,255,.7)'
+
+                        },
+                        axisLine: {
+                            show: false
+                        },
+                        axisTick: {
+                            show: false
+                        },
+                        splitLine: {
+                            show: false
+                        }
+                    }, {
+                        show: false,
+                        data: y_data,
+                        axisLine: {
+                            show: false
+                        }
+                    }],
+                    series: [{
+                        type: 'bar',
+                        name: '11',
+                        stack: '2',
+                        label: _label,
+                        legendHoverLink: false,
+                        barWidth: 7,
+                        itemStyle: {
+                            normal: {
+                                color: '#FD9133'
+                            },
+                            emphasis: {
+                                color: '#FD9133'
+                            }
+                        },
+                        data: _data1
+                    }, {
+                        type: 'bar',
+                        name: '12',
+                        stack: '2',
+                        legendHoverLink: false,
+                        barWidth: 20,
+                        label: _label,
+                        itemStyle: {
+                            normal: {
+                                color: '#2E8CFF'
+                            },
+                            emphasis: {
+                                color: '#2E8CFF'
+                            }
+                        },
+                        data: _data2
+                    }, {
+                        type: 'bar',
+                        stack: '2',
+                        name: '13',
+                        legendHoverLink: false,
+                        barWidth: 20,
+                        label: _label,
+                        itemStyle: {
+                            normal: {
+                                color: '#37D2D4'
+                            },
+                            emphasis: {
+                                color: '#37D2D4'
+                            }
+                        },
+                        data: _data3
+                    }, {
+                        type: 'bar',
+                        stack: '2',
+                        name: '14',
+                        legendHoverLink: false,
+                        barWidth: 20,
+                        label: _label,
+                        itemStyle: {
+                            normal: {
+                                color: '#19CA88'
+                            },
+                            emphasis: {
+                                color: '#19CA88'
+                            }
+                        },
+                        data: _data4
+                    }, {
+                        type: 'bar',
+                        stack: '2',
+                        name: '15',
+                        legendHoverLink: false,
+                        barWidth: 20,
+                        label: _label,
+                        itemStyle: {
+                            normal: {
+                                color: '#0EFCFF'
+                            },
+                            emphasis: {
+                                color: '#0EFCFF'
+                            }
+                        },
+                        data: _data5
+                    }]
+                };
+                yearsNumChart.setOption(option)
+                setInterval(function() {
+                    yearsNumChart.clear()
+                    yearsNumChart.setOption(option)
+                },120000)
+            },
+            contentFn:function() {
+                var resArr = [
+                    {name: '25%', value: 30},
+                    {name: '50%', value: 50},
+                    {name: '75%', value: 33},
+                    {name: '100%', value: 80},
+                ]
+                var nameArr = []
+                var caiArr = []
+                var cunArr = []
+                var danArr = []
+                var junArr = []
+                var zhenArr = []
+                for(var i = 0; i < resArr.length; i++) {
+                    nameArr.push(resArr[i].name)
+                    caiArr.push(resArr[i].value)
+                    cunArr.push(resArr[i].value)
+                    danArr.push(resArr[i].value)
+                    junArr.push(resArr[i].value)
+                    zhenArr.push(resArr[i].value)
+                }
+
+                var contentChart = echarts.init(document.getElementById('contentId'));
+                var option = {
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+                    legend: {
+                        x: '35%',
+                        y: '0%',
+                        data: ["暖白","暖黄光","正白","冷白","冷蓝光"],
+                        textStyle: {
+                            color: "#fff",
+                            fontSize: 8
+                        },
+                        itemWidth: 10,
+                        itemHeight: 10,
+                    },
+                    calculable: true,
+                    xAxis: [
+                        {
+                            type: 'category',
+                            data: nameArr,
+                            axisLabel: {
+                                interval: 0,
+                                textStyle: {
+                                    fontSize: 8,
+                                    color: 'rgba(255,255,255,.7)',
+                                }
+                            },
+                            "axisTick": {       //y轴刻度线
+                                "show": false
+                            },
+                            "axisLine": {       //y轴
+                                "show": false,
+                            },
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'value',
+                            scale: true,
+                            name: '单位：%',
+                            nameTextStyle: {
+                                color: 'rgba(255,255,255,.7)',
+                                fontSize: 8
+                            },
+                            max: 100,
+                            min: 0,
+                            boundaryGap: [0.2, 0.2],
+                            "axisTick": {       //y轴刻度线
+                                "show": false
+                            },
+                            "axisLine": {       //y轴
+                                "show": false,
+                            },
+                            axisLabel: {
+                                textStyle: {
+                                    color: 'rgba(255,255,255,.8)',
+                                    fontSize: 8
+                                    // opacity: 0.1,
+                                }
+                            },
+                            splitLine: {  //决定是否显示坐标中网格
+                                show: true,
+                                lineStyle: {
+                                    color: ['#fff'],
+                                    opacity: 0.2
+                                }
+                            },
+                        },
+                        {
+                            type: 'value',
+                            scale: true,
+                            show: false,
+                            nameTextStyle: {
+                                color: 'rgba(255,255,255,.2)',
+                            },
+                            max: 1,
+                            min: 0,
+                            boundaryGap: [0.2, 0.2],
+                            "axisTick": {       //y轴刻度线
+                                "show": false
+                            },
+                            "axisLine": {       //y轴
+                                "show": false,
+                            },
+                            axisLabel: {
+                                textStyle: {
+                                    color: 'rgba(255,255,255,.2)',
+                                    // opacity: 0.1,
+                                }
+                            },
+                            splitLine: {  //决定是否显示坐标中网格
+                                show: true,
+                                lineStyle: {
+                                    color: ['#fff'],
+                                    opacity: 0.2
+                                }
+                            },
+
+                        }
+                    ],
+                    color: ['#0EFCFF', '#FD9133'],
+                    grid: {
+                        left: '5%',
+                        right: '12%',
+                        top: '25%',
+                        bottom: '15%'
+                        // containLabel: true
+                    },
+                    series: [
+                        {
+                            barWidth: '10%',
+                            name: '11',
+                            type: 'bar',
+                            data: caiArr,
+                        },
+                        {
+                            animationDuration: 2500,
+                            barWidth: '20%',
+                            name: '12',
+                            type: 'bar',
+                            data: cunArr,
+                        },
+                        {
+                            animationDuration: 2500,
+                            barWidth: '20%',
+                            name: '13',
+                            type: 'bar',
+                            data: danArr,
+                        },
+                        {
+                            animationDuration: 2500,
+                            barWidth: '20%',
+                            name: '14',
+                            type: 'bar',
+                            data: junArr,
+                        },
+                        {
+                            animationDuration: 2500,
+                            barWidth: '20%',
+                            name: '15',
+                            type: 'bar',
+                            data: zhenArr,
+                        }
+                    ]
+                };
+                contentChart.setOption(option)
+                setInterval(function() {
+                    contentChart.clear()
+                    contentChart.setOption(option)
+                },90000)
+            },
+            publicNumFn:function() {
+                var resArr = [
+                    {name: '5%', value: 300},
+                    {name: '20%', value: 500},
+                    {name: '40%', value: 400},
+                    {name: '60%', value: 350},
+                    {name: '80%', value: 363},
+                    {name: '100%', value: 800},
+                ]
+                var xunArr = []
+                var jingArr = []
+                var dateArr = []
+                for(var i = 0; i < resArr.length; i++) {
+                    xunArr.push(resArr[i].value)
+                    jingArr.push(resArr[i].value)
+                    dateArr.push(resArr[i].name)
+                }
+                var publicNumChart = echarts.init(document.getElementById('publicNumId'));
+                var option = {
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+                    legend: {
+                        x: '35%',
+                        y: '0%',
+                        data: ['巡察', '警示'],
+                        textStyle: {
+                            color: "#fff",
+                            fontSize: 8
+                        },
+                        itemWidth: 10,
+                        itemHeight: 10,
+                    },
+                    calculable: true,
+                    xAxis: [
+                        {
+                            type: 'category',
+                            data: dateArr,
+                            axisLabel: {
+                                interval: 0,
+                                textStyle: {
+                                    fontSize: 8,
+                                    color: 'rgba(255,255,255,.7)',
+                                }
+                            },
+                            "axisTick": {       //y轴刻度线
+                                "show": false
+                            },
+                            "axisLine": {       //y轴
+                                "show": false,
+                            },
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'value',
+                            scale: true,
+                            name: '单位：%',
+                            nameTextStyle: {
+                                color: 'rgba(255,255,255,.7)',
+                                fontSize: 8
+                            },
+                            max: 1000,
+                            min: 0,
+                            boundaryGap: [0.2, 0.2],
+                            "axisTick": {       //y轴刻度线
+                                "show": false
+                            },
+                            "axisLine": {       //y轴
+                                "show": false,
+                            },
+                            axisLabel: {
+                                textStyle: {
+                                    color: 'rgba(255,255,255,.8)',
+                                    fontSize: 8
+                                    // opacity: 0.1,
+                                }
+                            },
+                            splitLine: {  //决定是否显示坐标中网格
+                                show: true,
+                                lineStyle: {
+                                    color: ['#fff'],
+                                    opacity: 0.2
+                                }
+                            },
+                        },
+                        {
+                            type: 'value',
+                            scale: true,
+                            show: false,
+                            nameTextStyle: {
+                                color: 'rgba(255,255,255,.2)',
+                            },
+                            max: 1,
+                            min: 0,
+                            boundaryGap: [0.2, 0.2],
+                            "axisTick": {       //y轴刻度线
+                                "show": false
+                            },
+                            "axisLine": {       //y轴
+                                "show": false,
+                            },
+                            axisLabel: {
+                                textStyle: {
+                                    color: 'rgba(255,255,255,.2)',
+                                    // opacity: 0.1,
+                                }
+                            },
+                            splitLine: {  //决定是否显示坐标中网格
+                                show: true,
+                                lineStyle: {
+                                    color: ['#fff'],
+                                    opacity: 0.2
+                                }
+                            },
+
+                        }
+                    ],
+                    color: ['#2E8CFF', '#38EB70'],
+                    grid: {
+                        left: '5%',
+                        right: '1%',
+                        top: '25%',
+                        bottom: '15%'
+                        // containLabel: true
+                    },
+                    series: [
+                        {
+                            animationDuration: 2500,
+                            barWidth: '20%',
+                            name: '巡察',
+                            type: 'bar',
+                            data: xunArr,
+                        },
+                        {
+                            barWidth: '20%',
+                            name: '警示',
+                            type: 'bar',
+                            data: jingArr,
+                        }
+                    ],
+                    animationEasing: 'cubicOut'
+                };
+                publicNumChart.setOption(option)
+                setInterval(function() {
+                    publicNumChart.clear()
+                    publicNumChart.setOption(option)
+                },60000)
+            }
+
+        }
+        var start = new apiFn()
+        start.Init()
+    })
+</script>
